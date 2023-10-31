@@ -3,9 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Rick and Morty</title>
 </head>
 <body>
+    <nav class="characterfilter">
+        <form id="search-form">
+            <input type="text" id="name-input" placeholder="Enter name here">
+            <select id="species-input">
+                <option value="">Species</option>
+                <option value="Human">Human</option>
+                <option value="Alien">Alien</option>
+                <option value="Humanoid">Humanoid</option>
+                <option value="Mytholog">Mythologic</option>
+                <option value="Animal">Animal</option>
+                <option value="Robot">Robot</option>
+                <option value="Cronenberg">Cronenberg</option>
+                <option value="Poopybutthole">Poopybutthole</option>                                
+                <option value="Disease">Disease</option>
+                <option value="unknown">Unknown</option>
+            </select>
+            <select id="gender-input">
+                <option value="">Gender</option>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+                <option value="Genderless">Genderless</option>
+                <option value="unknown">Unknown</option>
+            </select>
+            <button type="submit" class="button">Search</button>
+        </form>
+</nav>
     <main>
     <div id="character-list"></div>
     <script src="./src/js/call.js"></script>
