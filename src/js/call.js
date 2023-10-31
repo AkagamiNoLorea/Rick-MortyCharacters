@@ -30,5 +30,5 @@ async function getCharacters() {
         });
     }
     }
-
-getCharacters();
+    //module.exports = { getCharacters };
+    getCharacters();
