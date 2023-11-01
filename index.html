@@ -3,9 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Rick and Morty</title>
+    <link rel="stylesheet" href="./src/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap" rel="stylesheet">
 </head>
 <body>
-    
+    <header>
+        <center><img class="logo" src="./src/img/logo.png" alt="">
+        <h1>List of Characters</h1></center>
+    </header>
+    <nav class="characterFilter">
+        <form id="search-form">
+            <h2>Filter by:</h2>
+            <input type="text" id="name-input" placeholder="Enter name here">
+            <select id="species-input">
+                <option value="">Species</option>
+                <option value="Human">Human</option>
+                <option value="Alien">Alien</option>
+                <option value="Humanoid">Humanoid</option>
+                <option value="Mytholog">Mythologic</option>
+                <option value="Animal">Animal</option>
+                <option value="Robot">Robot</option>
+                <option value="Cronenberg">Cronenberg</option>
+                <option value="Poopybutthole">Poopybutthole</option>                                
+                <option value="Disease">Disease</option>
+                <option value="unknown">Unknown</option>
+            </select>
+            <select id="gender-input">
+                <option value="">Gender</option>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+                <option value="Genderless">Genderless</option>
+                <option value="unknown">Unknown</option>
+            </select>
+            <button type="submit" class="button">Search</button>
+        </form>
+</nav>
+    <main>
+    <div id="character-list"></div>
+    <script src="./src/js/call.js"></script>
+    <script src="./src/js/characterCard.js"></script>
+    </main>
 </body>
 </html>
