@@ -5,10 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rick and Morty</title>
     <link rel="stylesheet" href="./src/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <nav class="characterfilter">
+    <header>
+        <center><img class="logo" src="./src/img/logo.png" alt="">
+        <h1>List of Characters</h1></center>
+    </header>
+    <nav class="characterFilter">
         <form id="search-form">
+            <h2>Filter by:</h2>
             <input type="text" id="name-input" placeholder="Enter name here">
             <select id="species-input">
                 <option value="">Species</option>
